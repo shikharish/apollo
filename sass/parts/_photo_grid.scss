@@ -1,0 +1,48 @@
+.grid:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.grid-col {
+  float: left;
+  width: 49%;
+  //   margin-right: 2%;
+}
+
+.grid-col--2 {
+  margin-right: 0;
+  padding-left: 12px;
+}
+
+.grid-col--1{
+    padding-right: 12px;
+}
+
+@media (max-width: 576px) {
+  .grid-col {
+    width: 33.33%;
+  }
+  .grid-col--2 {display: none;}
+}
+
+// @media (min-width: 1200px) {
+//   .grid-col {
+//     width: 23.5%;
+//   }
+// }
+
+.photo {
+  min-height: 100px;
+  background: var(--bg-2);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+.photo-grid-image {
+    border: unset;
+    width: 100%;
+}
+

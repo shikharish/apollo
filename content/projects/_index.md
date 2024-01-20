@@ -1,5 +1,5 @@
 +++
-title = "Projects"
-sort_by = "weight"
+title = "projects"
+path = "projects"
 template = "cards.html"
 +++

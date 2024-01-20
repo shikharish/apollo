@@ -1,4 +1,5 @@
 @import "parts/_cards.scss";
+@import "parts/_photo_grid.scss";
 @import "parts/_code.scss";
 @import "parts/_header.scss";
 @import "parts/_image.scss";
@@ -24,7 +25,7 @@ html {
 }
 
 .content {
-  max-width: 1000px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 0 24px;
   word-wrap: break-word;
