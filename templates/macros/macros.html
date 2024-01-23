@@ -193,21 +193,3 @@
     {% endfor -%}
     </div>
 {% endmacro cards_posts %}
-
-{% macro photo_grid(pages) %}
-    <div class="grid" data-colcade="columns: .grid-col, items: .photo">
-    <div class="grid-col grid-col--1"></div>
-    <div class="grid-col grid-col--2"></div>
-    {%- for page in pages %}
-        <div class="photo">
-            {% if page.extra.local_image %}
-                <img class="photo-grid-image" alt={{ page.extra.local_image }} src="{{ get_url(path=page.extra.local_image) }}" />
-            {% elif page.extra.remote_image %}
-                <img class="photo-grid-image" alt={{ page.extra.remote_image }} src="{{ page.extra.remote_image }}" />
-            {% else %}
-                <div class="photo-grid-image-placeholder"></div>
-            {% endif %}
-        </div>
-    {% endfor -%}
-    </div>
-{% endmacro photo_grid %}
