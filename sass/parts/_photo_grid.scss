@@ -12,16 +12,16 @@
 
 .grid-col--2 {
   margin-right: 0;
-  padding-left: 12px;
+  padding-left: 1%;
 }
 
 .grid-col--1{
-    padding-right: 12px;
+    padding-right: 1%;
 }
 
 @media (max-width: 576px) {
   .grid-col {
-    width: 33.33%;
+    width: 100%;
   }
   .grid-col--2 {display: none;}
 }
