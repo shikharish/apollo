@@ -98,7 +98,7 @@
             {% set user = config.extra.analytics.goatcounter.user %}
             {% set host = config.extra.analytics.goatcounter.host | default(value="goatcounter.com") %}
 
-            <script data-goatcounter="https://{{ user }}.{{ host }}/count" async src="{{ get_url(path="js/count.js") }}"></script>
+            <script data-goatcounter="https://{{ user }}.{{ host }}/count" async src="//gc.zgo.at/count.js"></script>
             <noscript>
                 {# EasyList blocks '.com/count?', so we have to use '.com//count' #}
                 <img src="https://{{ user }}.{{ host }}//count?p={{ current_path }}&t={{ page.title | default(value=config.title) }}">
